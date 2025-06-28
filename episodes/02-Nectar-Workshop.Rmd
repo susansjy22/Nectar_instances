@@ -1,0 +1,34 @@
+---
+title: "Workshops using Nectar Instances"
+author: "SS"
+teaching: 45
+exercises: 20
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+
+## Required software
+
+## Logging on to a Nectar Instance
+
+## Transferring files between your computer and Nectar Instance
+
+## Testing your log on
+
+## Byobu-screen
+
+### Starting a byobu-screen session.
+
+### Reconnecting to a byobu-screen session.
+
+### Detaching or Terminating a byobu-screen session.
+
+## Applying for your own Nectar Allocation
+
+
+
+
+
+
