@@ -17,7 +17,7 @@ carpentry: 'uom'
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'Nectar_instances'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created:
@@ -65,8 +65,11 @@ contact: 'fixme@fixme.org'
 
 # Order of episodes in your lesson
 episodes:
-- introduction.Rmd
-- 02-Nectar-Workshop.Rmd
+- Logging on to a Nectar Instance.Rmd
+- Transferring files between your computer and Nectar Instance.Rmd
+- Testing your log on.Rmd
+- Byobu-screen.Rmd
+- Applying for your own Nectar Allocation.Rmd
 
 # Information for Learners
 learners:

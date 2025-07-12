@@ -2,53 +2,35 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
-
-## Data Sets
-
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
 
 ## Software Setup
 
-::::::::::::::::::::::::::::::::::::::: discussion
+Software you will need on your computer prior to starting this workshop:
 
-### Details
+1.  R
+2.  RStudio
+3.  The tidyverse R package
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+All three of these pieces of software are free and open-source.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
+::: spoiler
 
 ### Windows
 
-Use PuTTY
+1.  A terminal emulator such as 
+    [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) will need to be downloaded 
+2.  Software for file transfers between a local computer and remote server such as [FileZilla](https://filezilla-project.org/)
+    or [WinSCP](https://winscp.net/eng/index.php) is required.
 
-::::::::::::::::::::::::
+:::
 
-:::::::::::::::: spoiler
-
+::: spoiler
 ### MacOS
 
-Use Terminal.app
+No additional software is required. Use the **Terminal app**.
 
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
+-   File transfers: Use `scp`, or if you're not comfortable with the
+    command line, consider [FileZilla](https://filezilla-project.org/)
+    or [Cyberduck](https://cyberduck.io/).
+:::
 
