@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: All in One View</title>
+<title>Nectar_instances: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="assets/styles.css">
 <script src="assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -94,7 +94,7 @@
       <img class="small-logo" alt="Lesson Description" src="assets/images/uom-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Nectar_instances
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -105,7 +105,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Nectar_instances
           </span>
         </li>
         <li class="nav-item">
@@ -141,7 +141,7 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Lesson Title
+  Nectar_instances
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
@@ -243,7 +243,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using RMarkdown</a>
+        <a href="Logging%20on%20to%20a%20Nectar%20Instance.html">1. Logging on to a Nectar Instance</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -255,7 +255,43 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-Nectar-Workshop.html">2. 02-Nectar-Workshop</a>
+        <a href="Transferring%20files%20between%20your%20computer%20and%20Nectar%20Instance.html">2. Transferring files between your computer and Nectar Instance</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="Testing%20your%20log%20on.html">3. Testing your log on</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="Byobu-screen.html">4. Byobu-screen</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="Applying%20for%20your%20own%20Nectar%20Allocation.html">5. Applying for your own Nectar Allocation</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -318,222 +354,15 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using RMarkdown</a></p>
+<section id="aio-Logging on to a Nectar Instance"><p>Content from <a href="Logging%20on%20to%20a%20Nectar%20Instance.html">Logging on to a Nectar Instance</a></p>
 <hr>
-<p>Last updated on 2025-07-08 |
+<p>Last updated on 2025-07-12 |
 
-        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/Logging%20on%20to%20a%20Nectar%20Instance.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How do you write a lesson using R Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Explain how to use markdown with the new lesson template</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson template:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can also include figures generated from R Markdown:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pie</span><span class="op">(</span></span>
-<span>  <span class="fu">c</span><span class="op">(</span>Sky <span class="op">=</span> <span class="fl">78</span>, <span class="st">"Sunny side of pyramid"</span> <span class="op">=</span> <span class="fl">17</span>, <span class="st">"Shady side of pyramid"</span> <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>, </span>
-<span>  init.angle <span class="op">=</span> <span class="fl">315</span>, </span>
-<span>  col <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"deepskyblue"</span>, <span class="st">"yellow"</span>, <span class="st">"yellow3"</span><span class="op">)</span>, </span>
-<span>  border <span class="op">=</span> <span class="cn">FALSE</span></span>
-<span><span class="op">)</span></span></code></pre>
-</div>
-<figure style="text-align: center"><img src="fig/introduction-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid" class="figure mx-auto d-block"><figcaption>
-Sun arise each and every morning
-</figcaption></figure><p>Or you can use standard markdown for static figures with the
-following syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">Blue Carpentries hex person logo with no
-text.</div>
-</figure><div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
-<div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
-<div class="callout-content">
-<ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
-</ul>
-</div>
-</div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-02-Nectar-Workshop"><p>Content from <a href="02-Nectar-Workshop.html">02-Nectar-Workshop</a></p>
-<hr>
-<p>Last updated on 2025-07-08 |
-
-        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/02-Nectar-Workshop.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<section><h2 class="section-heading" id="required-software">Required Software<a class="anchor" aria-label="anchor" href="#required-software"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="mac-users">Mac Users<a class="anchor" aria-label="anchor" href="#mac-users"></a>
-</h3>
-<p>No additional software is required. Use the <strong>Terminal
-app</strong>.</p>
-<ul>
-<li>File transfers: Use <code>scp</code>, or if you’re not comfortable
-with the command line, consider <a href="https://filezilla-project.org/" class="external-link">FileZilla</a> or <a href="https://cyberduck.io/" class="external-link">Cyberduck</a>.</li>
-</ul>
-</div>
-<div class="section level3">
-<h3 id="windows-users">Windows Users<a class="anchor" aria-label="anchor" href="#windows-users"></a>
-</h3>
-<ol style="list-style-type: decimal">
-<li>Install a terminal emulator such as <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" class="external-link">PuTTY</a>.</li>
-<li>For file transfers, use <a href="https://filezilla-project.org/" class="external-link">FileZilla</a> or <a href="https://winscp.net/eng/index.php" class="external-link">WinSCP</a>.</li>
-</ol>
-</div>
-</section><section><h2 class="section-heading" id="logging-on-to-a-nectar-instance">Logging on to a Nectar Instance<a class="anchor" aria-label="anchor" href="#logging-on-to-a-nectar-instance"></a>
-</h2>
-<hr class="half-width">
+<p><strong>Authors:</strong> Melbourne Bioinformatics</p>
 <p>You will be given an individual username, IP address and password to
 log on to using the SSH client tool on your computer (Terminal on Mac or
 PuTTY on Windows).</p>
@@ -550,83 +379,291 @@ PuTTY on Windows).</p>
 <li>
 <strong>Password</strong>: Provided to you separately</li>
 </ul>
+<div id="attention" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="attention" class="callout-inner">
+<h3 class="callout-title">Attention</h3>
+<div class="callout-content">
+<ul>
+<li>Follow the instructions for your operating system carefully.</li>
+<li>Repeated failed log in attempts might result in being locked out of
+the account.</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="section level3">
-<h3 id="mac-users-1">Mac Users<a class="anchor" aria-label="anchor" href="#mac-users-1"></a>
+<h3 id="mac-users">Mac Users<a class="anchor" aria-label="anchor" href="#mac-users"></a>
 </h3>
-<p>In <em>Terminal</em>, type:</p>
-<p>`<code>markdown</code>bash ssh <a href="mailto:username@nectar" class="email">username@nectar</a>_ip-address</p>
+<p>In <em>Terminal</em>, type:
+<code>ssh username@nectar_ip-address</code></p>
 <p>You will be prompted to enter your password. After you have entered
 your password, hit <code>return</code>.</p>
-<div id="mac-terminal-example" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Mac Terminal Example
+  </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<figure><img src="fig/mac-terminal-example.png" class="figure mx-auto d-block"></figure>
 </div>
-<div id="mac-terminal-example" class="callout-inner">
-<h3 class="callout-title">Mac Terminal Example</h3>
-<div class="callout-content">
-<pre class="text"><code>(base) local_user@local_host ~ % ssh username@nectar_ip-address
-username@nectar_ip-address's password:</code></pre>
 </div>
 </div>
 </div>
-<div id="i-cant-see-my-password-as-im-typing-it" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="i-cant-see-my-password-as-im-typing-it" class="callout-inner">
-<h3 class="callout-title">I can’t see my password as I’m typing it</h3>
-<div class="callout-content">
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  I can’t see my password as I’m typing it
+  </h3>
+</button>
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div class="accordion-body">
 <p>You won’t receive feedback when entering your password. Rest assured
 it is being entered as you type it (or paste it in). Hit
 <code>return</code> after you have typed the whole password.</p>
 </div>
 </div>
 </div>
-<pre><code>---
-If you're using images and want to include the actual screenshot instead of simulating the terminal:
-
-```markdown
-![Mac Terminal Example](fig/mac-terminal-example.png)
-
-::: callout
-#### I can’t see my password as I’m typing it
-
-You won’t receive feedback when entering your password. Rest assured it is being entered as you type it (or paste it in). Hit `return` after you have typed the whole password.
-:::</code></pre>
 </div>
-</section><div class="section level2 Challenge">
-<h2 id="attention">Attention<a class="anchor" aria-label="anchor" href="#attention"></a>
-</h2>
-<p>Follow the instructions for your operating system carefully.</p>
-<p>Repeated failed login attempts might result in being locked out of
-the account.</p>
 </div>
-<section><h2 class="section-heading" id="transferring-files-between-your-computer-and-nectar-instance">Transferring files between your computer and Nectar Instance<a class="anchor" aria-label="anchor" href="#transferring-files-between-your-computer-and-nectar-instance"></a>
-</h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="testing-your-log-on">Testing your log on<a class="anchor" aria-label="anchor" href="#testing-your-log-on"></a>
-</h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="byobu-screen">Byobu-screen<a class="anchor" aria-label="anchor" href="#byobu-screen"></a>
-</h2>
-<hr class="half-width">
+<div class="section level3">
+<h3 id="windows-users">Windows Users:<a class="anchor" aria-label="anchor" href="#windows-users"></a>
+</h3>
+<p>In <code>PuTTY</code>, enter the IP address as the host name and 22
+for the port.</p>
+<p>After you click “Open” you’ll be prompted to type the username you
+have been assigned (i.e. alpha | beta | gamma | delta | epsilon | zeta).
+Press <kbd>enter</kbd>. You will then be prompted for the password that
+has been given to you. Press <kbd>enter</kbd>.</p>
+<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
+  <h3 class="accordion-header" id="headingSpoiler3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Putty Example
+  </h3>
+</button>
+<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
+<div class="accordion-body">
+<figure><img src="fig/Putty_example.png" class="figure mx-auto d-block"></figure>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSpoiler4" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler4" aria-expanded="false" aria-controls="collapseSpoiler4">
+  <h3 class="accordion-header" id="headingSpoiler4">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  I can’t see my password as I’m typing it
+  </h3>
+</button>
+<div id="collapseSpoiler4" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler4" aria-labelledby="headingSpoiler4">
+<div class="accordion-body">
+<p>You won’t receive feedback when entering your password. Rest assured
+it is being entered as you type it (or paste it in). Hit
+<kbd>enter</kbd> after you have typed the whole password.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSpoiler5" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler5" aria-expanded="false" aria-controls="collapseSpoiler5">
+  <h3 class="accordion-header" id="headingSpoiler5">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  How can I use copy and paste to enter my password?
+  </h3>
+</button>
+<div id="collapseSpoiler5" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler5" aria-labelledby="headingSpoiler5">
+<div class="accordion-body">
+<p><code>PuTTY</code> has a different shortcut for paste compared to
+what you may be used to. Instead of <kbd>ctrl-v</kbd>, try
+right-clicking in the password field to paste the contents of your
+clipboard.</p>
+</div>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div></section><section id="aio-Transferring files between your computer and Nectar Instance"><p>Content from <a href="Transferring%20files%20between%20your%20computer%20and%20Nectar%20Instance.html">Transferring files between your computer and Nectar Instance</a></p>
+<hr>
+<p>Last updated on 2025-07-12 |
+
+        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/Transferring%20files%20between%20your%20computer%20and%20Nectar%20Instance.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<ul>
+<li>
+<code>Host</code>: The IP address of the Nectar instance</li>
+<li>
+<code>Username</code>: alpha | beta | gamma | delta | epsilon |
+zeta</li>
+<li>
+<code>Port</code>: 22</li>
+<li>
+<code>Password</code>: Password that has been given to you.</li>
+</ul>
+<div class="section level3">
+<h3 id="mac-users">Mac Users<a class="anchor" aria-label="anchor" href="#mac-users"></a>
+</h3>
+<p><code>scp</code> can be used to transfer files. Alternatively, novice
+Unix users may want to use <a href="https://filezilla-project.org/" class="external-link">FileZilla</a>.</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Filezilla Example
+  </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<figure><img src="fig/Filezilla_Example.png" class="figure mx-auto d-block"></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="windows-users">Windows Users<a class="anchor" aria-label="anchor" href="#windows-users"></a>
+</h3>
+<p>Using file transfer software such as <a href="https://filezilla-project.org/" class="external-link">FileZilla</a> or <a href="https://winscp.net/eng/index.php" class="external-link">WinSCP</a></p>
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Filezilla Example
+  </h3>
+</button>
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div class="accordion-body">
+<figure><img src="fig/Filezilla_Example.png" class="figure mx-auto d-block"></figure>
+</div>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div></section><section id="aio-Testing your log on"><p>Content from <a href="Testing%20your%20log%20on.html">Testing your log on</a></p>
+<hr>
+<p>Last updated on 2025-07-12 |
+
+        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/Testing%20your%20log%20on.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<ol style="list-style-type: decimal">
+<li>
+<a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/#logging-on-to-a-nectar-instance" class="external-link">Log
+on</a> to your Nectar Instance</li>
+<li>Get a copy of the <code>test_transfer.txt</code> to your local
+computer.</li>
+<li>
+<a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/#transferring-files-between-your-computer-and-nectar-instance" class="external-link">Transfer</a>
+<code>test_transfer.txt</code> to your local computer.</li>
+</ol></section><section id="aio-Byobu-screen"><p>Content from <a href="Byobu-screen.html">Byobu-screen</a></p>
+<hr>
+<p>Last updated on 2025-07-12 |
+
+        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/Byobu-screen.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<p>Some of the commands can take a while to run. Should your connection
+drop and the SSH session on Nectar terminates, any commands that are
+running will terminate too. To mitigate this, once logged on to the
+Nectar Instance, we’ll run <code>byobu-screen</code> (an enhancement for
+the <code>screen</code> terminal multiplexer) which allows us to resume
+a session. In other words, processes running in
+<code>byobu-screen</code> will continue to run when their window is not
+visible, even if you get disconnected.</p>
+<div id="attention" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="attention" class="callout-inner">
+<h3 class="callout-title">Attention</h3>
+<div class="callout-content">
+<p>We will do this step in the workshop though feel free to try out the
+<code>byobu-screen</code> commands below.</p>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="starting-a-byobu-screen-session-">Starting a byobu-screen session.<a class="anchor" aria-label="anchor" href="#starting-a-byobu-screen-session-"></a>
 </h3>
+<p>On Nectar, to start a <code>byobu-screen</code> session called
+<code>workshop</code>, type</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">byobu-screen</span> <span class="at">-ls</span></span></code></pre>
+</div>
 </div>
 <div class="section level3">
 <h3 id="reconnecting-to-a-byobu-screen-session-">Reconnecting to a byobu-screen session.<a class="anchor" aria-label="anchor" href="#reconnecting-to-a-byobu-screen-session-"></a>
 </h3>
+<p>Should your SSH session on Nectar terminate, once you log back in to
+your Nectar instance, list running sessions/screens:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">byobu-screen</span> <span class="at">-r</span> workshop</span></code></pre>
+</div>
+<p>If it says (Attached) next to the <code>workshop</code> session in
+the list, you can access <code>workshop</code> which is already attached
+by:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">byobu-screen</span> <span class="at">-r</span> <span class="at">-d</span> workshop</span></code></pre>
+</div>
 </div>
 <div class="section level3">
 <h3 id="detaching-or-terminating-a-byobu-screen-session-">Detaching or Terminating a byobu-screen session.<a class="anchor" aria-label="anchor" href="#detaching-or-terminating-a-byobu-screen-session-"></a>
 </h3>
-</div>
-</section><section><h2 class="section-heading" id="applying-for-your-own-nectar-allocation">Applying for your own Nectar Allocation<a class="anchor" aria-label="anchor" href="#applying-for-your-own-nectar-allocation"></a>
-</h2>
-<hr class="half-width">
+<ul>
+<li><p>To detach from <code>workshop</code>, type <kbd> ctrl-a ctrl-d
+</kbd> while inside the <code>workshop</code> session. (You will need to
+configure Byobu’s ctrl-a behaviour if it hasn’t already been configured
+(text will appear on the screen telling you this). Follow the
+information on the screen and select <code>1</code> for Screen
+mode).</p></li>
+<li><p>To terminate <code>workshop</code>, type <kbd>ctrl-d</kbd> while
+inside the <code>workshop</code> session.</p></li>
+</ul>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section></section>
+ -->
+</div></section><section id="aio-Applying for your own Nectar Allocation"><p>Content from <a href="Applying%20for%20your%20own%20Nectar%20Allocation.html">Applying for your own Nectar Allocation</a></p>
+<hr>
+<p>Last updated on 2025-07-12 |
+
+        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/Applying%20for%20your%20own%20Nectar%20Allocation.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<p>Should you wish to do this tutorial at a later stage independently,
+it is possible to apply for your own instance directly through a <a href="https://support.ehelp.edu.au/support/solutions/articles/6000068044-managing-an-allocation" class="external-link">Nectar
+allocation</a>. There are also many helpful <a href="https://tutorials.rc.nectar.org.au/" class="external-link">Nectar Research Cloud
+tutorials</a>. You will need to install your required software.</p></section>
 </div>
     </main>
 </div>
@@ -673,9 +710,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "melbournebioinformatics.github.io/uom-varnish/aio.html",
   "identifier": "melbournebioinformatics.github.io/uom-varnish/aio.html",
-  "dateCreated": "2025-07-08",
-  "dateModified": "2025-07-08",
-  "datePublished": "2025-07-08"
+  "dateCreated": "2025-07-12",
+  "dateModified": "2025-07-12",
+  "datePublished": "2025-07-12"
 }
 
   </script><script>
