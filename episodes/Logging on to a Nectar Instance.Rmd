@@ -1,5 +1,5 @@
 ---
-title: "Logging on to a Nectar Instance"
+title: "Workshops using Nectar Instances"
 author: "Melbourne Bioinformatics"
 date: "2025-07-12"
 teaching: 45
@@ -10,13 +10,28 @@ editor_options:
 ---
 **Authors:** Melbourne Bioinformatics
 
-::::::::::::::::::::::::::::::::::::: objectives
+::::::::::::::::::::::::::::::::::::: callout
+#### Overview
 The workshop you will be doing will run on a Nectar Instance. An
 "Instance" is Nectar terminology for a virtual machine running on the
 Nectar Cloud OpenStack infrastructure. An "Instance" runs on a "compute
 node"; i.e. a physical computer populated with processor chips, memory
 chips and so on.
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::
+
+## Objectives
+- Understand what a Nectar Instance is and how it relates to the Nectar Cloud infrastructure.
+- Identify the software required to access Nectar Instances on Mac and Windows systems.
+- Successfully log in to a Nectar Instance using SSH on both Mac and Windows.
+- Transfer files between a local machine and a Nectar Instance using SCP or file transfer software.
+- Test your connection by transferring a test file (`test_transfer.txt`) from the instance to your local computer.
+- Understand the purpose of `byobu-screen` and use it to maintain long-running sessions:
+  - Start a named `byobu-screen` session.
+  - Reconnect to a screen session after disconnection.
+  - Detach and terminate a screen session safely.
+- Know how to apply for your own Nectar allocation to run independent tutorials in the future.
+
+## Logging on to a Nectar Instance
 
 ```{r setup, include=FALSE}
 # Smaller images for pdf
