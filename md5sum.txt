@@ -4,7 +4,7 @@
 "config.yaml" "63976d3a931d94d903299a4bec16342f" "site/built/config.yaml" "2025-07-12"
 "index.md" "a02c9c785ed98ddd84fe3d34ddb12fcd" "site/built/index.md" "2025-07-08"
 "links.md" "8184cf4149eafbf03ce8da8ff0778c14" "site/built/links.md" "2025-07-08"
-"episodes/Logging on to a Nectar Instance.Rmd" "0764c4b4fed36b0e395f3a93612acfb7" "site/built/Logging on to a Nectar Instance.md" "2025-07-12"
+"episodes/Logging on to a Nectar Instance.Rmd" "d3f9463fe44c62b5efb243b226924700" "site/built/Logging on to a Nectar Instance.md" "2025-07-26"
 "episodes/Transferring files between your computer and Nectar Instance.Rmd" "66e24fa281fe6fe6fd55e8af0e9d280e" "site/built/Transferring files between your computer and Nectar Instance.md" "2025-07-12"
 "episodes/Testing your log on.Rmd" "f799d1e0779f13d5917241770b6c83c7" "site/built/Testing your log on.md" "2025-07-12"
 "episodes/Byobu-screen.Rmd" "e088e6a2e0437775c6e96b5589ef99e9" "site/built/Byobu-screen.md" "2025-07-12"
