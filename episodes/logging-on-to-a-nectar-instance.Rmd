@@ -2,8 +2,7 @@
 title: "Workshops using Nectar Instances"
 author: "Melbourne Bioinformatics"
 date: "2025-07-12"
-teaching: 45
-exercises: 20
+teaching: 20
 editor_options: 
   markdown: 
     wrap: 72
