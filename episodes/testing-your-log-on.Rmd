@@ -2,8 +2,7 @@
 title: "Testing your log on"
 author: "SS"
 date: "2025-07-12"
-teaching: 45
-exercises: 20
+teaching: 5
 editor_options: 
   markdown: 
     wrap: 72
