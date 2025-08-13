@@ -6,21 +6,22 @@
 # swc: Software Carpentry
 # dc: Data Carpentry
 # lc: Library Carpentry
-# cp: Carpentries (to use for instructor training for instance)
-# incubator: The Carpentries Incubator
-# Note that you can also use a custom carpentry type. For more info,
-# see the documentation: https://carpentries.github.io/sandpaper-docs/editing.html
-carpentry: 'uom'
+
+# uom: University of Melbourne
+# mb: Melbourne Bioinformatics
+# mig: Melbourne Integrative Genomics
+# wehi: Walter and Eliza Hall Institute
+carpentry: 'mb'
 
 # Custom carpentry description
 # This will be used as the alt text for the logo
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Nectar_instances'
+title: 'Nectar Instances'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created:
+created:2025-08-7
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson'
@@ -39,8 +40,7 @@ source: 'https://github.com/melbournebioinformatics/workbench-template-rmd'
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'fixme@fixme.org'
-
+contact: 'jiayi.si.2@unimelb.edu.au'
 # Navigation ------------------------------------------------
 #
 # Use the following menu items to specify the order of
@@ -65,11 +65,11 @@ contact: 'fixme@fixme.org'
 
 # Order of episodes in your lesson
 episodes:
-- Logging on to a Nectar Instance.Rmd
-- Transferring files between your computer and Nectar Instance.Rmd
-- Testing your log on.Rmd
-- Byobu-screen.Rmd
-- Applying for your own Nectar Allocation.Rmd
+- logging-on-to-a-nectar-instance.Rmd
+- transferring-files-between-your-computer-and-nectar-instance.Rmd
+- testing-your-log-on.Rmd
+- byobu-screen.Rmd
+- applying-for-your-own-nectar-allocation.Rmd
 
 # Information for Learners
 learners:
@@ -85,7 +85,11 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
+carpentry_description: This workshop guides you through working with Nectar
+cloud instances, including logging in via SSH, transferring files, and testing
+your connection. You’ll also learn to use byobu-screen to keep processes running
+after disconnection and how to apply for your own Nectar allocation for future
+use.
 
-carpentry_description: Lesson Description
-varnish: melbournebioinformatics/uom-varnish@main
-url: melbournebioinformatics.github.io/uom-varnish
+varnish: 'melbournebioinformatics/uom-varnish@main'
+url: 'melbournebioinformatics.github.io/uom-varnish'
