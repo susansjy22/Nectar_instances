@@ -86,7 +86,7 @@ After you click “Open” you’ll be prompted to type the username you have be
 
 ::: spoiler
 ### Putty Example 
-![](fig/Putty_example.png)
+![](./fig/Putty_example.png)
 :::
 
 ::: spoiler 
