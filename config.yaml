@@ -21,7 +21,7 @@ carpentry: 'mb'
 title: 'Nectar Instances'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created:2025-08-7
+created: 2025-08-07
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson'
@@ -85,11 +85,9 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
-carpentry_description: This workshop guides you through working with Nectar
-cloud instances, including logging in via SSH, transferring files, and testing
-your connection. You’ll also learn to use byobu-screen to keep processes running
-after disconnection and how to apply for your own Nectar allocation for future
-use.
+carpentry_description: This workshop guides you through working with Nectar cloud instances,
+ including logging in via SSH, transferring files, and testing your connection.
+ You’ll also learn to use byobu-screen to keep processes running after disconnection and how to apply for your own Nectar allocation for future use.
 
 varnish: 'melbournebioinformatics/uom-varnish@main'
 url: 'melbournebioinformatics.github.io/uom-varnish'
